@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html "lang=en-GB">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<head>
+		<title> XM </title>
+		<style>
+			
+			* {margin-block-start: 0; margin-block-end: 0}
+
+			body {
+				--accent: rgb(160, 110, 0);
+				background-color: lightgrey;
+				padding-left: 1em;
+				margin: 0;
+				font-family: sans-serif
+			}
+				
+			p, ol, ul {font-size: 12pt; line-height: 1.25em; font-weight: 500}
+			h1, h2, h3 {font-size: 1.5em; line-height: 1.5em; font-weight: 300}
+			
+			a {color: var(--accent); cursor: pointer; text-decoration: none}
+			label {cursor: pointer}
+			a:hover, label:hover {font-style: italic}
+			a:active, label:active {letter-spacing: .1rem}
+			
+			b {font-weight: inherit; color: var(--accent)}
+			
+			ol, ul {list-style: none; line-height: 1.5em; margin-left: -2.5em}
+			li {border-top: 1px solid black; margin-top: -1px}
+					
+			hr {border-top: 1px solid black; border-bottom: 0px; margin-top: -1px}
+			.hr-h {border-top: 1px solid var(--accent)}
+			
+			img {width:25%; min-width:20em}
+			
+			input[type=checkbox] {display: none}
+			
+			input[type=submit] {
+				color: lightgrey;
+				font-size: 1em;
+				font-family: sans-serif;
+				background: var(--accent);
+				border: none;
+				border-radius: 2em;
+				margin: 0 0 1.25em 0;
+				padding: .5em 1em .5em 1em;
+				cursor: pointer}
+			input[type=submit]:hover {background: darkgrey; color: var(--accent); font-style: italic}
+			input[type=submit]:active {background:darkgrey; color: lightgrey; box-shadow; letter-spacing: .05rem}
+			
+			.two-col {display: flex; height: 100vh}
+			.two-col> div {width: 50%; padding-right: 1em; padding-top: 1em; overflow: auto}
+			
+			.content {display:none}
+			input:checked + label + .content {display:block; margin-bottom: 1.25em}
+			
+			.project-image-50 {width: 50%; padding-top:1.25em; padding-bottom: 1.25em}
+			.project-image-100 {width: 100%; padding-top:1.25em; padding-bottom: 1.25em}
+			
+			#announcement {color: lightgrey; text-align: left; background-color: var(--accent); border-radius: 5em; position: absolute; bottom: 1em; right: 1em; padding: .5em 2em .5em 2em}
+						
+			@media (max-width: 800px) {
+				body {padding-left: .5em}
+				.two-col {flex-direction: column; padding-right: .5em; height: 100%; padding-top: 1em}
+				.two-col>div {width: 100%; max-width: 400px; padding-right: 1em}
+				.project-image-100, .project-image-50 {width: 100%}
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<div class= two-col>
+			<div>
+				<hr class=hr-h>
+				<input type="checkbox" id="projects">
+				<label for="projects">
+					<h2> <b> selected work </b> </h2>
+				</label>
+				<div class="content">
+					<br>
+					
+					<div id="Meridiem">
+						<hr>
+						<input type="checkbox" id="Meridiem t">
+						<label for="Meridiem t">
+							<h3> <b>Meridiem</b>, in progress </h3>
+						</label>
+						<article class=content>
+							<img src="Meridiem 2.jpg" class="project-image-100">
+							<p> The English language lacks an elegant term for a 12 hour cycle — the span of time in which a standard clock’s hour hand completes a full rotation. This omission casts serious doubts on the idea that measured time and its representation is a solved problem. By dividing clocks into their subprocesses, I aim to more clearly understand what we can and should do with them.
+							</p>
+						</article>
+					</div>
+					<div id="Time is a jet plane">
+						<hr>
+						<input type="checkbox" id="Time is a jet plane t">
+						<label for="Time is a jet plane t">
+							<h3> <b>Time is a jet plane</b>, in progress </h3>
+						</label>
+						<article class=content>
+							<img src="Time is a jet plane 2.jpg" class="project-image-100" style="margin-bottom: -1.25em">
+						</article>
+					</div>
+					<div id="What's good">
+						<hr>
+						<input type="checkbox" id="What's good t">
+						<label for="What's good t">
+							<h3> <b>What's good</b>, fall–winter 2022–23 </h3>
+						</label>
+						<article class=content>
+							<img src="What's good 1.jpg" class="project-image-100">
+						
+							<form action="https://objects.fun">
+								<input type="submit" value="objects.fun">
+							</form>
+						
+							<p> What is the relevance of a functional object without function? The twin factors of obsolescence and replacement, and wearing down through usage or neglect, push once-valued things into the dusty shelves and soggy cardboard boxes of material purgatory. A brief window exists to get a grasp of these things as they pass from discreteness to aggregate, and our only option is to take them as they come.
+							</p><br>
+							<p> Find a "design piece" you've seen only representations of and you may be surprised by how little it can do for you outside its intended time and place. This project is an argument for a quality that remains independent of something's original purpose. Anticipation of unselfconscious usage evaporates and leaves behind a mist of directionless, unprogrammed visual and tactile interactions.
+							</p><br>
+							<p> This project is an attempt to create rich and rigorously objective replicas of found objects that possess this quality. Available here are digital models, each based on a close reading of an object's surface. It is my hope that the process heightened my sensitivity to this quality, and that the models can themselves be used as references, when the originals are not available, for what might be formally "good".
+							</p>
+						</article>
+					</div>
+					<div id="Terra">
+						<hr>
+						<input type="checkbox" id="Terra t">
+						<label for="Terra t">
+							<h3> <b>Terra</b>, 2021–22 </h3>
+						</label>
+						<article class=content>
+							<img src="Terra specimen 2.jpg" class="project-image-100">
+							<form action="Terra 2.4.1.zip">
+								<input type="submit" value="download Terra version 2.4.1">
+							</form>
+							<p>Nicholas Jenson's 15th century roman typeface represents a crucial point on the spectrum between hand-lettered calligraphy and constructed type. Structurally, it is formed by the shape of the pen nib and the movement of the calligrapher's hand, yet it is idealized to remove abnormalities that would become distracting with repetition.</p><br>
+<p>In drawing letters based on this typeface, I wanted to learn why these letterforms were "correct", on their own terms. Applying a set of geometric heuristics, the well-resolved nature of something like Helvetica is clear, but I suspected something else was going on with traditional serif lettering that came from a tradition outside modernist uniformity.</p><br>
+<p>The process for creating the letters began with drawing them at a 5 mm x-height with a 1.5 mm nib in black ink. Each letter was drawn many times to better understand its construction and to obtain better results. These pages were photographed, one instance of each character was selected, and the drawings were cleaned up and vectorized. In some cases, a final digital glyph would be composited from a few different drawings.</p><br>
+<p>It became clear through the process that the logic of the roman lowercase came primarily from the hand and the tool rather than a set of geometric rules. Angles on glyphs like the lowercase e were determined by how the pen was held, and serifs felt like a natural way to terminate vertical strokes.</p><br>
+<p>At all times, a balance had to be made between cleanliness and preservation of aspects of the original drawing. The end result is not necessarily resolved — too much like handwriting by the standards of a typographer like Emil Ruder — but crucially, it does preserve marks of its handmade nature.</p><br>
+<p>A lowercase set of letters with limited punctuation was fine as a proof of concept and had a certain conceptual completeness, but the constraints imposed on the user of the typeface unsurprisingly became a problem. A set of numerals was the first step in addressing the functional deficiencies, but an uppercase proved necessary.</p><br>
+<p>These characters were not originally included because the formal development of the roman uppercase had more twists and turns that that of the lowercase. Instead of a progression from pen stroke to cut metal, the origins of capitals in Roman engravings (themselves perhaps based on brushstrokes, according to calligrapher Edward Catich) had to be considered.</p><br>
+<p>A certain short-circuiting, bypassing the rigidity of the chisel, was needed in order to come up with capitals that matched the existing lowercase alphabet formally and methodologically. Important aspects, namely the consistent pen angle, could not be maintained were the Jenson model followed as closely as before. What followed was a process in which the final form was less predetermined.</p><br>
+<p>Now that certain practical reasons for the shapes of letterforms were better understood, I wanted to test the concept of anticipation in creative work — how known is the outcome at the beginning? As drawing the lowercases was a matter of emulation, I expected all along that each lowercase Terra glyph would bear some resemblance to its Jenson counterpart. Now, for each uppercase character, it was necessary to project something that was visually harmonious with the other glyphs and true to its process but still recognizable and legible.</p><br>
+<p>Once again, many instances of each character were drawn, but the stylistic range tended to be broader in this case, ranging from fluid to deconstructive approaches. Out of these, I tended to select the more traditional options somewhere in the middle. In the final character set, the differences from Jenson are not as drastic as expected. The main differences other than the "handmade" feel are missing serifs on horizontal strokes as well as a more clear relationship between pen angle and stroke width variation.</p><br>
+<p>The impact of anticipation on the process was strongly felt even without direct reference to a precedent. Counting on the process itself to give unforeseen results is not a dependable strategy without developing a sort of counter for oneself against the "weight of history". While this uppercase alphabet is not formally innovative, it has a soundness and consistency — in at least this case, perhaps things are the way they are for a reason.
+							</p>
+						</article>
+					</div>
+					<div id="Integrated relational system">
+						<hr>
+						<input type="checkbox" id="Integrated relational system t">
+						<label for="Integrated relational system t">
+							<h3> <b>Integrated relational system</b>, winter 2020–21 </h3>
+						</label>
+						<article class=content>
+							<img src="Integrated relational system 1.jpg" class="project-image-100">
+							<img src="Integrated relational system 2.jpg" class="project-image-100" style="margin-top: -1.5em">
+							<p> A storage system for symbolic and physical things. Objects entered into the system are classified as missing, proxy, or “true” objects — with spaces left empty, replicas or representations constructed, or the object itself incorporated.
+							</p>
+						</article>
+					</div>
+	
+				</div>
+			</div>
+			<div>
+				<hr class=hr-h>
+				<input type="checkbox" id="experience">
+				<label for="experience">
+					<h2> <b> experience </b> </h2>
+				</label>
+				<div class="content">
+					<br>
+					<ol>
+						<li> Design Academy Eindhoven, NL, 2019–23 </li>
+						<li> Bauhaus-Universität Weimar, DE, 2019 </li>
+						<li> Pratt Institute industrial design, US, 2016–18 </li>
+						<li> Etobicoke School of the Arts contemporary art, CA, 2012–16 </li>
+						<li> &shy; </li>
+						<li> Atelier Lachaert Dhanis, BE, 2022–23 </li>
+						<li> Biography Design, CA, 2018–19 </li>
+						<li> Pratt Institute comms office, US, 2017–18 </li>
+						<li> Ian Maclaren Architect inc, CA, 2016– </li>
+						<li> Moss & Lam, CA, 2015 </li>
+						<li> &shy; </li>
+						<li> Joana Vasconcelos interview, DAMN magazine 82, BE, 2022 </li>
+						<li> lecture on typography, Design Academy Eindhoven, NL, 2021 </li>
+						<li> group multimedia show, Gallery House, US, 2017 </li>
+						<li> duo painting show, Project Gallery, CA, 2016 </li>
+						<li> group photography show, Artscape, CA, 2016 </li>
+						<li> Art Talk 5, Ontario College of Art and Design, CA, 2016 </li>
+						<li> group multimedia show, York University, CA, 2016 </li>
+						<li> Art Talk 4, Ontario College of Art and Design, CA, 2015 </li>
+					</ol>
+					<br>
+					<form action="CV.pdf">
+								<input type="submit" value="download cv pdf">
+							</form>
+				</div>
+				<hr class=hr-h>
+				<h2> <a href="mailto:flat-antonym0a@icloud.com?subject=inquiry via site"> contact </a> <h2>
+			</div>
+		</div>
+		<!--<div id=announcement>
+			<h1> xander maclaren </h1>
+		</div>-->
+	</body>
